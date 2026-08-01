@@ -48,7 +48,8 @@ The model takes into account key spatial-temporal and environmental parameters:
 
 You can interact with the live deployed model without running any local code:
 
-👉 **[Launch Maritime-X Live Interactive Dashboard](https://huggingface.co/spaces/shruttijadon/maritime-x-dashboardd)**
+
+👉 **[Launch Maritime-X Live Interactive Dashboard](https://huggingface.co/spaces/shrutijadon/maritime-x-dashboardd)**
 
 ---
 
