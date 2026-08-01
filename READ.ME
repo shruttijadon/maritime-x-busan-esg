@@ -33,3 +33,16 @@ Port congestion leads to extended vessel anchorage, increased marine fuel consum
 ---
 
 ## 🏗️ Technical Pipeline Architecture
+┌────────────────────────┐      ┌───────────────────────────┐      ┌───────────────────────────┐
+│  Synthetic AIS Stream  │ ───> │    Feature Engineering    │ ───> │ Dual Predictive ML Models │
+│  (LAT, LON, Speed, ID) │      │  - Spatial BallTree (2km) │      │  - Random Forest          │
+└────────────────────────┘      │  - Weather Risk Index     │      │  - XGBoost Regressor      │
+┌────────────────────────┐      │  - Peak Window Flags      │      └─────────────┬─────────────┘
+│ Marine Weather Data    │ ───> │  - Economic Cost Engine   │                    │
+│ (Wind Speed, Waves)    │      └───────────────────────────┘                    ▼
+└────────────────────────┘                                        ┌───────────────────────────┐
+│    XAI & Decision Support │
+│  - SHAP Interpretability  │
+│  - Rerouting Scenario Engine│
+│  - Folium Live Map / Gradio│
+└───────────────────────────┘
