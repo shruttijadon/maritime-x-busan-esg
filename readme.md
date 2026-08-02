@@ -134,8 +134,7 @@ This is a **prototype system**. The following components have been implemented:
 ---
 
 ## Live Demo
-
-👉 Live Demo: https://shruttijadon.github.io/maritime-x-busan-esg/
+https://huggingface.co/spaces/shrutijadon/maritime-x-dashboard/tree/main
 
 ---
 
