@@ -72,7 +72,6 @@ The framework includes an interactive dashboard that visualizes delay risk, esti
 
 
 
----
 
 ## Problem Statement & Motivation
 
@@ -154,7 +153,7 @@ The framework is designed to highlight which factors (such as port congestion, v
 - Real-world validation with actual AIS, berth, and operational data has not yet been performed.
 - Performance metrics and economic/ESG impact estimates are illustrative and not based on real deployment.
 - The model has not been tested on extreme events (e.g., typhoons, major disruptions).
----
+
 
 ## Future Research Directions
 
