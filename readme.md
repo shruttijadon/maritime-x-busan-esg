@@ -135,7 +135,7 @@ This is a **prototype system**. The following components have been implemented:
 
 ## Live Demo
 
-👉 [Launch Maritime-X Interactive Dashboard](https://huggingface.co/spaces/shruttijadon/maritime-x-dashboardd)
+👉 Live Demo: https://shruttijadon.github.io/maritime-x-busan-esg/
 
 ---
 
