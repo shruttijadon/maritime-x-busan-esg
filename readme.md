@@ -132,7 +132,8 @@ This is a **prototype system**. The following components have been implemented:
 - **Deployment:** Hugging Face Spaces
 
 ---
-
+live demo
+https://huggingface.co/spaces/shrutijadon/maritime-x-dashboardd
 
 
 ---
