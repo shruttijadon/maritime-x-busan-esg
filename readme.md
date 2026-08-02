@@ -1,4 +1,7 @@
 # 🚢 MARITIME-X: Busan Port Decision Support & Carbon Monitoring System
+> **Important Note:**  
+> This is a **prototype research project** developed using simulated data for educational and exploratory purposes.  
+> Real-world data validation is planned as future work.
 
 [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live%20Dashboard-blue)](https://huggingface.co/spaces/shruttijadon/maritime-x-dashboardd)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-green)](https://www.python.org/)
@@ -59,11 +62,13 @@ Port congestion and idle vessel anchorage contribute significantly to operationa
 ---
 ## Abstract
 
-MARITIME-X is an Explainable Artificial Intelligence framework designed 
-to predict vessel arrival delays and quantify ESG carbon emissions at 
-Busan Port. Leveraging XGBoost machine learning combined with SHAP 
-interpretability techniques, the system achieves [YOUR MODEL ACCURACY]% 
-accuracy in delay prediction while maintaining stakeholder transparency. 
+## Abstract
+
+MARITIME-X is a prototype Explainable AI (XAI) framework designed to support decision-making in port operations, with a focus on vessel delay prediction and ESG-related carbon emission estimation. 
+
+This project demonstrates the application of machine learning (XGBoost) combined with SHAP interpretability techniques for analyzing factors that influence port delays and operational inefficiencies. The current version is developed using simulated data generated based on publicly available Busan Port statistics, AIS patterns, and weather characteristics.
+
+The framework includes an interactive dashboard that visualizes delay risk, estimated carbon impact, and operational cost implications. This work serves as a foundation for future research using real-world port data and aims to explore how Explainable AI can contribute to smarter and more sustainable port management.
 
 **Key Findings:**
 - Port congestion identified as primary delay factor (34.2% SHAP impact)
@@ -131,30 +136,24 @@ To run this repository locally or experiment with the Jupyter Notebook:
    cd maritime-x-busan-esg
  ## Results & Performance Metrics
 
-### Model Accuracy Comparison
+## Current Status & Results
 
-| Metric | XGBoost | Random Forest | Baseline (Mean) |
-|--------|---------|---------------|-----------------|
-| MAE (hours) | 2.34 | 2.67 | 4.12 |
-| RMSE (hours) | 3.78 | 4.01 | 5.44 |
-| R² Score | 0.847 | 0.821 | 0.562 |
-| MAPE (%) | 18.2% | 21.5% | 35.8% |
+The current version of MARITIME-X is a prototype system built on simulated data. 
 
-**Interpretation:** XGBoost model explains 84.7% of variance in port delays, 
-representing 50% improvement over naive mean forecasting baseline.
+Key components implemented:
+- Feature engineering based on spatial, temporal, and weather-related variables
+- XGBoost model for delay prediction
+- SHAP-based explainability for understanding feature contributions
+- Interactive dashboard for visualization of risk levels and estimated impacts
+
+**Note:** Performance metrics and impact quantifications will be reported after validation on real-world data.
 
 ### SHAP Feature Importance Analysis
+## Explainability (SHAP Analysis)
 
-| Rank | Feature | SHAP Value | Impact Interpretation |
-|------|---------|------------|----------------------|
-| 1 | Port Occupancy (7-day avg) | 0.342 | Congestion is primary delay driver |
-| 2 | Vessel Size (TEU) | 0.198 | Larger vessels require longer processing |
-| 3 | Weather Index | 0.156 | Adverse weather adds 3-8 hours |
-| 4 | Hour-of-Day | 0.124 | Night shifts operate 2-4 hours slower |
-| 5 | Vessel Age | 0.089 | Older vessels exhibit higher delay probability |
+SHAP (SHapley Additive exPlanations) is integrated to provide interpretability of the model predictions. 
 
-**Key Insight:** Top 3 features account for 69.6% of model predictions, 
-indicating strong identifiability of delay drivers.
+The framework is designed to highlight which factors (such as port congestion, vessel characteristics, weather conditions, and temporal patterns) contribute most to predicted delays. Detailed SHAP analysis will be conducted and reported once the model is trained and validated on real operational data.
 
 ### ESG & Economic Impact Quantification
 
@@ -171,44 +170,23 @@ indicating strong identifiability of delay drivers.
 ---
 
 ## Limitations of Current Framework
+## Limitations
 
-1. **Geographic Scope:** Model trained exclusively on Busan Port data; 
-   generalization to other ports requires retraining with port-specific patterns
-
-2. **Temporal Horizon:** Optimal prediction accuracy for 24-48 hour forecasts; 
-   accuracy degrades for longer horizons due to increased uncertainty
-
-3. **Rare Event Coverage:** Training data lacks representation of extreme 
-   events (typhoons, labor strikes); model may underestimate delays in such scenarios
-
-4. **Real-Time Performance:** Current inference latency ~50ms (acceptable 
-   for planning systems, not for dynamic steering control)
-
+- The current system is developed using **simulated data** based on publicly available statistics and patterns related to Busan Port.
+- Real-world validation with actual AIS, berth, and operational data has not yet been performed.
+- Performance metrics and economic/ESG impact estimates are illustrative and not based on real deployment.
+- The model has not been tested on extreme events (e.g., typhoons, major disruptions).
 ---
 
 ## Future Research Directions
 
-**Phase 2 Enhancements:**
+## Future Work
 
-1. **Graph Neural Networks (GNN)**
-   - Model port as graph structure (vessels → berths → equipment → gates)
-   - Captures structural relationships beyond temporal patterns
-   - Timeline: Q1 2025
-
-2. **Causal Inference Framework**
-   - Distinguish true causal relationships from correlation
-   - Enable policy counterfactual analysis
-   - Timeline: Q2 2025
-
-3. **Multi-Port Transfer Learning**
-   - Develop domain adaptation for other major ports (Incheon, Gwangyang)
-   - Reduce retraining data requirements
-   - Timeline: Q3 2025
-
-4. **Reinforcement Learning for Autonomous Scheduling**
-   - Dynamic berthing optimization
-   - Real-time resource allocation
-   - Timeline: Q4 2025+
+- Collect and integrate real-world data from Busan Port (AIS, berth occupancy, weather, vessel records)
+- Retrain and validate models on actual operational data
+- Conduct comprehensive SHAP and error analysis
+- Explore Digital Twin integration for port operations
+- Extend the framework toward multi-port generalization and real-time decision support
 
 ---
 
