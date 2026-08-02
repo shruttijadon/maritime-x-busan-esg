@@ -27,6 +27,7 @@ quantify ESG impact, and optimize port operations.
 ## 2. Methodology
 
 ### Data Sources
+Note: These are simulated data volumes for prototype demonstration.
 | Data | Records | Features | Period |
 |------|---------|----------|--------|
 | Busan Port | 15,000 | 42 raw | 2022-2024 |
@@ -62,7 +63,7 @@ Port congestion and idle vessel anchorage contribute significantly to operationa
 ---
 ## Abstract
 
-## Abstract
+
 
 MARITIME-X is a prototype Explainable AI (XAI) framework designed to support decision-making in port operations, with a focus on vessel delay prediction and ESG-related carbon emission estimation. 
 
@@ -147,7 +148,6 @@ The framework is designed to highlight which factors (such as port congestion, v
 ---
 
 ## Limitations of Current Framework
-## Limitations
 
 - The current system is developed using **simulated data** based on publicly available statistics and patterns related to Busan Port.
 - Real-world validation with actual AIS, berth, and operational data has not yet been performed.
