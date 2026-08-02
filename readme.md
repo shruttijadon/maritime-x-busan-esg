@@ -70,17 +70,7 @@ This project demonstrates the application of machine learning (XGBoost) combined
 
 The framework includes an interactive dashboard that visualizes delay risk, estimated carbon impact, and operational cost implications. This work serves as a foundation for future research using real-world port data and aims to explore how Explainable AI can contribute to smarter and more sustainable port management.
 
-**Key Findings:**
-- Port congestion identified as primary delay factor (34.2% SHAP impact)
-- Average prediction error: 2.34 hours (vs 4.12 hours manual baseline)
-- Potential annual savings: $3.2M USD through optimized scheduling
-- ESG reduction: 2,060 tonnes CO₂/year via delay prevention
 
-The interactive dashboard enables real-time decision support for Busan 
-Port Authority stakeholders.
-
-**Keywords:** Explainable AI, SHAP, Maritime Operations, Predictive 
-Modeling, ESG Analytics
 
 ---
 
@@ -154,18 +144,6 @@ Key components implemented:
 SHAP (SHapley Additive exPlanations) is integrated to provide interpretability of the model predictions. 
 
 The framework is designed to highlight which factors (such as port congestion, vessel characteristics, weather conditions, and temporal patterns) contribute most to predicted delays. Detailed SHAP analysis will be conducted and reported once the model is trained and validated on real operational data.
-
-### ESG & Economic Impact Quantification
-
-**Annual Emissions Profile (2024):**
-- Total CO₂ Emissions: 42,580 tonnes CO₂/year
-- Delay-Related Emissions: 8,640 tonnes CO₂/year (20.3% of total)
-- Predictive Prevention Potential: 2,060 tonnes CO₂/year reduction (4.8% of total)
-
-**Economic Benefit Analysis:**
-- Current Annual Idle Costs: $18.7 Million USD
-- Preventable via Prediction: $3.2 Million USD (17.1%)
-- ROI Timeline: 6-8 months for full deployment
 
 ---
 
