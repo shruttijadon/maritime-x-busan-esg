@@ -133,8 +133,7 @@ This is a **prototype system**. The following components have been implemented:
 
 ---
 
-## Live Demo
-https://huggingface.co/spaces/shrutijadon/maritime-x-dashboard/tree/main
+
 
 ---
 
